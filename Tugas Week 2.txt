@@ -25,24 +25,26 @@ Tunjukkan nilai "gaya"
 STORE "tahun" with any value
 
 CALCULATE
-    IF "tahun" mod 4 equal to 0 AND "tahun" mod 100 not equal to 0
+    IF "tahun" mod 4 equal to 0
         DISPLAY "tahun kabisat"
-    ELSE "tahun" mod 400 equal to 0
-        IF "tahun" mod 400 equal to 0
-            DISPLAY "tahun kabisat"
-        ELSE
-            DISPLAY "tahun kabisat"
-
+    ELSE IF "tahun" mod 100 equal to 0
+        DISPLAY "tahun kabisat"
+    ELSE IF "tahun" mod 400 equal to 0
+        DISPLAY "tahun kabisat"
+    ELSE
+        DISPLAY "bukan tahun kabisat"
 ________________________________________
 Masukkan "tahun" dengan nilai berapapun
 
 Hitunglah
-    Jika "tahun" habis dibagi 4 dan "tahun" tidak habis dibagi 100
-    Maka tunjukkan "tahun kabisat"
-    Selain daripada itu jika habis dibagi 400
-    
-
-
+    Jika "tahun" habis dibagi 4,
+        tunjukkan "tahun kabisat"
+    jika tidak, maka jika "tahun" habis dibagi 100
+        tunjukkan "tahun kabisat"
+    jika tidak, maka jika "tahun" habis dibagi 400
+        tunjukkan "tahun kabisat"
+    Selain daripada itu
+        tunjukkan "bukan tahun kabisat"
 
 
 ========================================================================================
