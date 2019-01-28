@@ -1,0 +1,45 @@
+1. Hukum Newton kedua
+
+STORE "massa" to 600
+STORE "percepatan" to 2
+STORE "gaya" without any value
+
+CALCULATE "massa" times "percepatan"
+SET "gaya" value with calculation result
+
+DISPLAY "area"
+
+========================================================================================
+2. Tahun Kabisat
+
+STORE "tahun" with any value
+
+CALCULATE
+    IF "tahun" mod 2 equal to 0 AND "tahun" mod 100 not equal to 0
+        DISPLAY "tahun kabisat"
+    ELSE "tahun" mod 400 equal to 0
+        IF "tahun" mod 400 equal to 0
+            DISPLAY "tahun kabisat"
+        ELSE
+            DISPLAY "tahun kabisat"
+
+========================================================================================
+3. Mesin Cuci
+
+STORE "machine" with 0
+
+WHILE "machine" <= 20
+    ADD "machine" by 1
+
+DISPLAY "start"
+
+========================================================================================
+4. Periksa Kuku
+
+WHILE "siswa" <=40
+  
+  DISPLAY "siswa"
+  IF "siswa" equals to panjang
+    DISPLAY "punish"
+  ELSE
+    DISPLAY "praise"
