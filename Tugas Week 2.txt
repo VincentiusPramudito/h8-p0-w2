@@ -7,7 +7,17 @@ STORE "gaya" without any value
 CALCULATE "massa" times "percepatan"
 SET "gaya" value with calculation result
 
-DISPLAY "area"
+DISPLAY "gaya"
+________________________________________
+Masukkan nilai "massa" dengan nilai 600
+Masukkan nilai "percepatan" dengan nilai 2
+Masukkan nilai "gaya" dengan nilai kosong
+
+Hitung "massa" dikali dengan "percepatan"
+Masukkan hasil perhitungan ke "gaya"
+
+Tunjukkan nilai "gaya"
+
 
 ========================================================================================
 2. Tahun Kabisat
@@ -15,7 +25,7 @@ DISPLAY "area"
 STORE "tahun" with any value
 
 CALCULATE
-    IF "tahun" mod 2 equal to 0 AND "tahun" mod 100 not equal to 0
+    IF "tahun" mod 4 equal to 0 AND "tahun" mod 100 not equal to 0
         DISPLAY "tahun kabisat"
     ELSE "tahun" mod 400 equal to 0
         IF "tahun" mod 400 equal to 0
@@ -23,23 +33,54 @@ CALCULATE
         ELSE
             DISPLAY "tahun kabisat"
 
+________________________________________
+Masukkan "tahun" dengan nilai berapapun
+
+Hitunglah
+    Jika "tahun" habis dibagi 4 dan "tahun" tidak habis dibagi 100
+    Maka tunjukkan "tahun kabisat"
+    Selain daripada itu jika habis dibagi 400
+    
+
+
+
+
 ========================================================================================
 3. Mesin Cuci
 
-STORE "machine" with 0
+STORE "clothes" with 1
 
-WHILE "machine" <= 20
-    ADD "machine" by 1
+WHILE "clothes" <= 20
+    ADD "clothes" by 1
 
-DISPLAY "start"
+DISPLAY "machine start"
+
+________________________________________
+Masukkan "clothes" dimulai dari 1
+
+sampai "clothes" mencapai nilai 20,
+tambahkan "clothes" satu per satu
+
+Saat sudah mencapai target "machine start"
 
 ========================================================================================
 4. Periksa Kuku
 
+STORE "siswa" to 0
+
 WHILE "siswa" <=40
   
+  ADD "siswa"
   DISPLAY "siswa"
   IF "siswa" equals to panjang
     DISPLAY "punish"
   ELSE
     DISPLAY "praise"
+
+________________________________________
+
+
+Sampai dengan "siswa" berjumlah 40, 
+Tambahkan "siswa" satu persatu
+"siswa" yang berkuku panjang akan dihukum
+selain dari itu akan dipuji
