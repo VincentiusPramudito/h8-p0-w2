@@ -1,4 +1,4 @@
-1. Sentence
+//1. Sentence//
 
 var word = 'JavaScript ';
 var second = 'is ';
@@ -9,9 +9,9 @@ var sixth = 'love ';
 var seventh = 'it!';
 
 console.log(word+second+third+fourth+fifth+sixth+seventh);
-=========================================================================================================
+//=========================================================================================================//
 
-2. Index Accessing
+//2. Index Accessing//
 
 var word = 'wow JavaScript is so cool';
 var exampleFirstWord = word[0] + word[1] + word[2];
@@ -25,7 +25,7 @@ console.log('Second Word: ' + secondWord);
 console.log('Third Word: ' + thirdWord);
 console.log('Fourth Word: ' + fourthWord);
 console.log('Fifth Word: ' + fifthWord);
-=========================================================================================================
+//=========================================================================================================//
 
 3. Breaking Sentence Using SubString
 
@@ -41,9 +41,9 @@ console.log('Second Word: ' + secondWord);
 console.log('Third Word: ' + thirdWord);
 console.log('Fourth Word: ' + fourthWord);
 console.log('Fifth Word: ' + fifthWord);
-=========================================================================================================
+//=========================================================================================================//
 
-4. Breaking and Count
+//4. Breaking and Count//
 
 var word = 'wow JavaScript is so cool';
 var exampleFirstWord = word.substring(0, 3);
@@ -63,9 +63,8 @@ console.log('Second Word: ' + secondWord + ', with length: ' + secondWordLength)
 console.log('Third Word: ' + thirdWord + ', with length: ' + thirdWordLength);
 console.log('Fourth Word: ' + fourthWord + ', with length: ' + fourthWordLength);
 console.log('Fifth Word: ' + fifthWord + ', with length: ' + fifthWordLength);
-=========================================================================================================
+//=========================================================================================================//
 
-5.
 
 
 
