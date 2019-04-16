@@ -2,21 +2,21 @@
 
 STORE "massa" to 600
 STORE "percepatan" to 2
-STORE "gaya" without any value
+STORE "resultan gaya" without any value
 
 CALCULATE "massa" times "percepatan"
-SET "gaya" value with calculation result
+SET "resultan gaya" value with the result of calculation
 
-DISPLAY "gaya"
+SHOW and DISPLAY "resultan gaya"
 ________________________________________
 Masukkan nilai "massa" dengan nilai 600
 Masukkan nilai "percepatan" dengan nilai 2
-Masukkan nilai "gaya" dengan nilai kosong
+Masukkan nilai "resultan gaya" dengan nilai kosong
 
 Hitung "massa" dikali dengan "percepatan"
-Masukkan hasil perhitungan ke "gaya"
+Masukkan hasil perhitungan ke "resultan gaya"
 
-Tunjukkan nilai "gaya"
+Tunjukkan dan tampilkan nilai "resultan gaya"
 
 
 ========================================================================================
@@ -25,64 +25,71 @@ Tunjukkan nilai "gaya"
 STORE "tahun" with any value
 
 CALCULATE
-    IF "tahun" mod 4 equal to 0
-        DISPLAY "tahun kabisat"
-    ELSE IF "tahun" mod 100 equal to 0
-        DISPLAY "tahun kabisat"
-    ELSE IF "tahun" mod 400 equal to 0
-        DISPLAY "tahun kabisat"
-    ELSE
-        DISPLAY "bukan tahun kabisat"
-________________________________________
+    IF "tahun" mod 4 equal to 0,
+        IF "tahun" mod 100 Not equal to 0
+            DISPLAY "tahun kabisat"
+        ELSE IF "tahun" mod 400 equal to 0
+            DISPLAY "tahun kabisat"
+        ELSE
+            DISPLAY "bukan tahun kabisat"
+    ________________________________________
 Masukkan "tahun" dengan nilai berapapun
 
 Hitunglah
     Jika "tahun" habis dibagi 4,
-        tunjukkan "tahun kabisat"
-    jika tidak, maka jika "tahun" habis dibagi 100
-        tunjukkan "tahun kabisat"
-    jika tidak, maka jika "tahun" habis dibagi 400
-        tunjukkan "tahun kabisat"
-    Selain daripada itu
-        tunjukkan "bukan tahun kabisat"
+        Jika "tahun" tidak habis dibagi 100
+            tunjukkan "tahun kabisat"
+        Jika tidak, maka jika "tahun" habis dibagi 400
+            tunjukkan "tahun kabisat"
+        Selain daripada itu
+            tunjukkan "bukan tahun kabisat"
 
 
 ========================================================================================
 3. Mesin Cuci
 
-STORE "clothes" with 1
+STORE "input" and save with 20
+SET "count" with 0
 
-WHILE "clothes" <= 20
-    ADD "clothes" by 1
-
-DISPLAY "machine start"
+WHILE "count" less than equal to "input"
+    ADD "count" by 1
+    IF "count" equal to "input"
+        DISPLAY "machine start"
 
 ________________________________________
-Masukkan "clothes" dimulai dari 1
+Masukkan nilai "input" sebesar 20
+Atur "count" dengan nilai 0
 
-sampai "clothes" mencapai nilai 20,
-tambahkan "clothes" satu per satu
-
-Saat sudah mencapai target "machine start"
+Selama nilai "count" kurang dari sama dengan "input",
+    Tambahkan "count" satu per satu
+    Saat "count" sama dengan "input"
+        Tunjukkan "machine start"
 
 ========================================================================================
 4. Periksa Kuku
 
-STORE "siswa" to 0
+STORE "input" to 40
+SET "siswa" to 0
 
-WHILE "siswa" <=40
+WHILE "siswa" <= "input"
   
-  ADD "siswa"
-  DISPLAY "siswa"
-  IF "siswa" equals to panjang
-    DISPLAY "punish"
-  ELSE
-    DISPLAY "praise"
+  ADD "siswa" by 1 and CHECK
+ 
+      IF "siswa" equals to "panjang"
+        DISPLAY "punish"
+      ELSE
+        DISPLAY "praise"
 
 ________________________________________
 
+Masukkan "input" dengan nilai 40
+Set "siswa" dengan nilai 0
 
-Sampai dengan "siswa" berjumlah 40, 
-Tambahkan "siswa" satu persatu
-"siswa" yang berkuku panjang akan dihukum
-selain dari itu akan dipuji
+Selama "siswa" kurang dari sama dengan "input"
+
+    Tambahkan "siswa" satu persatu dan cek
+
+        Jika "siswa" yang berkuku panjang
+            Tampilkan "dihukum"
+        Selain dari itu
+            Tampilkan "dipuji"
