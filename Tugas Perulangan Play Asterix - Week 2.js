@@ -1,8 +1,7 @@
 //1. Menyusun barisan bintang//
-var rows1=2;
-var i=rows1;
+var rows1 = 5;
 
-for (i=''; i < rows1; i++){
+for (var i = 0; i < rows1; i++){
   console.log('*');
 }
 
@@ -13,7 +12,7 @@ var rows2= 5; // input the number of rows
 for (i = 0; i < rows2; i++){
   var bintang = '';
   for (j = 0; j < rows2; j++){
-    bintang = bintang + '*';
+    bintang += '*';
   }
   console.log(bintang);
 }
@@ -25,7 +24,7 @@ var rows3 = 5; // input the number of rows
 for (i = 0; i < rows3; i++){
   var bintang ='';
   for (j = 0; j <= i; j++){
-    bintang = bintang + '*';
+    bintang += '*';
   }
   console.log(bintang);
 }
