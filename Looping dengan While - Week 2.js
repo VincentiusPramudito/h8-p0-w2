@@ -27,6 +27,7 @@ for (var loop2 = 20; loop2 >=0; loop2--){
 //3a. Ganjil genap//
 
 for (angka=1; angka<=100; angka++){
+  
   if (angka%2==0) {
     console.log ('Genap');
   }
@@ -38,6 +39,7 @@ for (angka=1; angka<=100; angka++){
 //3b. kelipatan 3 dengan pertambahan 2//
 
 for (angka=1; angka<=100; angka+=2){
+
   if (angka%3==0) {
     console.log (angka+ ' kelipatan '+ '3');
   }
@@ -49,6 +51,7 @@ for (angka=1; angka<=100; angka+=2){
 //3c. kelipatan 6 dengan pertambahan 5//
 
 for (angka=1; angka<=100; angka+=5){
+
   if (angka%6==0) {
     console.log (angka+ ' kelipatan '+ '6');
   }
@@ -60,6 +63,7 @@ for (angka=1; angka<=100; angka+=5){
 //3d. kelipatan 3 dengan pertambahan 9//
 
 for (angka=1; angka<=100; angka+=9){
+
   if (angka%10==0) {
     console.log (angka+ ' kelipatan '+ '10');
   }
