@@ -2,7 +2,7 @@ var hari = 2;
 var bulan = 12;
 var tahun = 1900;
 
-if(hari <1 || hari >31 || tahun <1900 || tahun > 2200){
+if(hari < 1 || hari > 31 || tahun < 1900 || tahun > 2200){
      console.log("Invalid Input!")
 }else{
     switch(bulan){
@@ -21,11 +21,11 @@ if(hari <1 || hari >31 || tahun <1900 || tahun > 2200){
         case 7:{            
             console.log(hari + ' Juli ' + tahun);break;} 
         case 8:{
-            console.log(hari + ' Agustus ' + tahun);break;}  
+            console.log(hari + ' Agustus ' + tahun);break;}
         case 9:{            
             console.log(hari + ' September ' + tahun); break;}  
         case 10:{
-            console.log(hari + ' Oktober ' + tahun);break}  
+            console.log(hari + ' Oktober ' + tahun);break} 
         case 11:{
             console.log(hari + ' November ' + tahun);break;}  
         case 12:{
