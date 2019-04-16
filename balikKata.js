@@ -1,12 +1,10 @@
 //Balik Kata//
 function balikKata(kata) {
-  var isi = kata;
-  var i = isi.length;
-  var hasil = '';
-  for (i = isi.length-1; i >= 0; i--){
-    hasil = hasil + isi[i];
+  var result = '';
+  for(var i = kata.length-1; i >= 0; i--){
+    result += kata[i]
   }
-  return hasil;
+  return result
 }
 
 // TEST CASES

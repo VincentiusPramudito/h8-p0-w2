@@ -1,6 +1,7 @@
 //Bandingkan angka//
 
 function bandingkanAngka(angka1, angka2) {
+
   if (angka1>angka2){
     return false;
   }
@@ -11,6 +12,7 @@ function bandingkanAngka(angka1, angka2) {
     return '-1'
   }
 }
+
 // TEST CASES
 console.log(bandingkanAngka(5, 8)); // true
 console.log(bandingkanAngka(5, 3)); // false

@@ -12,7 +12,8 @@ function xo(str) {
     else if(str[i] === 'o'){
       counter2++;
     }
-  }    
+  }   
+ 
   if ( counter1 === counter2){
     return true;
   }
