@@ -8,7 +8,6 @@ for (var i = 0; i < rows1; i++){
 //2. Menyusun barisan bintang dengan nested looping//
 var rows2= 5; // input the number of rows
 
-// do loops to display asterisks in the console.
 for (i = 0; i < rows2; i++){
   var bintang = '';
   for (j = 0; j < rows2; j++){
@@ -17,10 +16,23 @@ for (i = 0; i < rows2; i++){
   console.log(bintang);
 }
 
-//3. Menyusun barisan tangga dengan nested looping//
-var rows3 = 5; // input the number of rows
+//jika memakai function
+function star(num){
+    var result = '';
+    for(var i = 0; i < num; i++){
+        for(var j = 0; j < num; j++){
+            result += '*'
+        }
+        result +='\n'
+    }
+    return result
+}
 
-// do loops to display asterisks in the console.
+console.log(star(5));
+
+//3. Menyusun barisan tangga dengan nested looping//
+var rows3 = 5;
+
 for (i = 0; i < rows3; i++){
   var bintang ='';
   for (j = 0; j <= i; j++){
@@ -28,3 +40,17 @@ for (i = 0; i < rows3; i++){
   }
   console.log(bintang);
 }
+
+//jika memakai function
+function star(num){
+    var result = '';
+    for(var i = 0; i < num; i++){
+        for(var j = 0; j <= i; j++){
+            result += '*'
+        }
+        result +='\n'
+    }
+    return result
+}
+
+console.log(star(5));
